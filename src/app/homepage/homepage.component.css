@@ -1,0 +1,26 @@
+
+
+
+button{
+    position: absolute;
+    right: 0%;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(89, 89, 163);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+}
+table,td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border-collapse: collapse;
+  }
+  th{
+      background-color: rgb(122, 122, 158);
+      color: white;
+      
+  }

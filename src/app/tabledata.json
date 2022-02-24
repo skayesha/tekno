@@ -1,0 +1,33 @@
+[
+   
+   
+   
+   
+    {
+        "customerName":"john",
+        "projectName":"john project",
+        "globalMaster":"abc",
+        "indicator":"abc",
+        "techniccalPerson":"abc",
+        "forecastGenerated":"abc"
+        
+    },
+    {
+        "customerName":"john",
+        "projectName":"john project",
+        "globalMaster":"abc",
+        "indicator":"abc",
+        "techniccalPerson":"abc",
+        "forecastGenerated":"abc"
+        
+    },
+    {
+        "customerName":"john",
+        "projectName":"john project",
+        "globalMaster":"abc",
+        "indicator":"abc",
+        "techniccalPerson":"abc",
+        "forecastGenerated":"abc"
+        
+    }
+]

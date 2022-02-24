@@ -1,0 +1,35 @@
+<button type="submit" (click)='logout()'>Logout</button>
+
+<br>
+<br><br>
+<table>  
+    <thead>  
+        <tr>  
+          <th>Customer Name</th>  
+          <th>Project Name</th>  
+          <th>Global Master</th>  
+          <th>Indicator</th>
+          <th>Techniccal Person</th>
+          <th>Forecast Generated</th>
+          <th>Actions</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let customer of receivedData ">  
+        <td>{{ customer.customerName }}</td>  
+        <td>{{ customer.projectName }}</td>  
+        <td>{{ customer.globalMaster }}</td>  
+        <td>{{ customer.indicator }}</td>
+        <td>{{ customer.techniccalPerson }}</td>
+        <td>{{ customer.forecastGenerated }}</td>
+       
+        <td>
+            <a style="cursor: pointer" (click)="viewData()" ><i class="fa fa-eye"></i></a>
+            <a style="cursor: pointer" (click)="editData()" ><i class="fa fa-edit"></i></a>
+            <a style="cursor: pointer" (click)="deleteData()" ><i class="fa fa-trash"></i></a>
+
+        </td>  
+      </tr>  
+    </tbody>  
+  </table>
+    

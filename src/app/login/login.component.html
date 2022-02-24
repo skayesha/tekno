@@ -1,0 +1,24 @@
+
+
+
+<form [formGroup]="loginForm" novalidate>
+    <label for="username">Username:&nbsp;</label>
+    <input type="email" formControlName="username" class="form-control" placeholder="Enter your username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+        <div style="color: red;" *ngIf="f.username.errors.required">Username is required</div>
+    </div><br><br>
+    <label for="password">Password: &nbsp;</label>
+    <input type="password" formControlName="password" class="form-control" placeholder="Enter your password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div style="color: red;" *ngIf="f.password.errors.required">Password is required</div>
+        <div style="color: red;" *ngIf="f.password.errors.pattern">Password must contain UpperCase,Lowercase,at least 1 number, at least 1 special character</div>
+    </div><br><br>
+ <button id="loginButton" type="submit" (click)="login()">Login</button>
+</form>
+
+<div *ngIf="errorMessage" id="errorMessage" class="modal">
+    <div class="modal-content">
+    entered details are invalid
+    </div>
+</div>
+
